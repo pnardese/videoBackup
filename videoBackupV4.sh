@@ -46,6 +46,13 @@ MEDIA="MOV"
 # MAIN
 ##########################################################
 
+if [ $# -eq 0 ]
+  then
+    echo "No arguments supplied"
+    echo "Usage: videoBackup card_name"
+    exit 1
+fi
+
 TODAY=`date +%Y-%m-%d`
 NOW=`date +%H%M%S`
 
